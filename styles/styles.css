@@ -2,8 +2,55 @@
 /* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
 
 body {
-    background: magenta;
+    background: #FBECEC;
+    color: #440047;
 }
 p {
-    font-size: 2em;
+    font-size: 1em;
 }
+
+nav{
+    display: block;
+    background-color:#440047 ;
+  }
+  
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    
+    
+    align-content: right;
+  }
+  
+  nav ul li{
+    margin: 0.25 rem;
+  }
+  
+  nav ul a {
+    display: inline-grid;
+      padding: 1.5rem;
+      color: #91D18B;
+      font-size: 1rem;
+      text-decoration: none;
+      position: relative;
+      
+  }
+  
+  nav ul a:hover{
+    color:#E11D74;
+  }
+  
+  nav ul a::after {
+    width: 100%;
+    height: 0.15em;
+    content: "";
+    background-color:#91D18B;
+  }
+  
+  .tactics p{
+    color:red;
+  }
