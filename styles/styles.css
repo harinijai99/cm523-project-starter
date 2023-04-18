@@ -21,6 +21,12 @@ p {
     font-size: 1em;
 }
 
+a:hover {
+  color:#40513B;
+}
+
+/* HOME PAGE */
+
 .page-title {
   display: grid;
   place-content: center;
@@ -69,24 +75,63 @@ nav{
   nav ul a {
     display: inline-grid;
       padding: 1.5rem;
-      color: #91D18B;
-      font-size: 1rem;
+      color: #F5EDDC;
+      font-size: 1.3rem;
       text-decoration: none;
       position: relative;
+      font-family: 'Playfair Display';
       
   }
   
   nav ul a:hover{
-    color:#E11D74;
+    color:#40513B;
   }
   
   nav ul a::after {
     width: 100%;
     height: 0.15em;
     content: "";
-    background-color:#91D18B;
+    background-color:#F5EDDC;
   }
-  
+
+
+  /* ABOUT PAGE */
+.about-page-title {
+  text-align: center;
+  font-family: "Shrikhand";
+}
+
+.about-content {
+  display: grid;
+    
+    line-height: 1.5em;
+    width: 100%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+}
+
+/* RESOURCES PAGE */
+
+.resources-page-title {
+  text-align: center;
+  font-family: "Shrikhand";
+}
+
+.resources-content {
+  display: grid;
+    
+    line-height: 1.5em;
+    width: 100%;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+}
+
 
 
   /* CHOICE PAGE */
@@ -180,6 +225,107 @@ nav{
   text-decoration: none;
   font-size: 1.5em;
 }
+
+h4 {
+  display: block;
+  border: 0.3em solid #243D25;
+  box-shadow:0.25em 0.25em #676f65 ;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+#start {
+  background-color: #243D25;
+  padding: 0.7rem;
+  
+}
+
+#start a {
+  text-decoration: none;
+  color: #F5EDDC;
+  font-family: 'Playfair Display';
+}
+
+#end {
+  background-color: #243D25;
+  padding: 0.7rem;
+  
+}
+
+#end a {
+  text-decoration: none;
+  color: #F5EDDC;
+  font-family: 'Playfair Display';
+}
+
+/* FINANCIAL DURESS */
+
+.scholarships {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+ }
+
+
+.sites{
+  display: flex;
+  justify-content: center;
+ height: 150px;
+  width: 150px;
+ max-width: 600px;
+ border: 1px solid green;
+  align-items : center;
+  list-style: none;
+  text-align: center;
+  margin: 1.5em; 
+ 
+  background-image: repeating-linear-gradient(-45deg, #243D25, #243D25 1em, #40513B 1em, #40513B 50%);
+ background-size: 2em 2em;
+ 
+}
+
+
+.sites a {
+ color: #F5EDDC;
+ text-decoration: none;
+ font-size: 1em;
+}
+
+/* SOCIAL ANXIETY */
+
+.tools{
+  display: flex;
+  justify-content: center;
+ height: 90px;
+  width: 90px;
+ max-width: 600px;
+ border: 1px solid green;
+  align-items : center;
+  list-style: none;
+  text-align: center;
+  margin: 1.5em; 
+  background: repeating-linear-gradient(10deg, #243D25, #243D25 50%, #40513B 50%, #40513B);
+ background-size: 100% 2em;
+ 
+}
+
+.journaling {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ margin-top: 1em;
+}
+
+.tools a {
+ color: #F5EDDC;
+ text-decoration: none;
+ font-size: 1em;
+}
+
+
 
 
   
