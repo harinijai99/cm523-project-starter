@@ -7,22 +7,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Shrikhand&display=swap');
 
 /* BODY STYLES */
-
 body {
-   background: #FBECEC;
-   color: #243D25;
-  background: repeating-linear-gradient(45deg, #F5EDDC, #F5EDDC 15px,  #FFF5E4 0, #FFF5E4 30px);
-  min-height: 100vh;
+  background: #FBECEC;
+  color: #440047;
+ background: repeating-linear-gradient(45deg, #FBECEC, #FBECEC 5px,  #fadede 0, #fadede 30px);
+ min-height: 100vh;
 margin: auto;
-  
+ 
 }
 
 p {
-    font-size: 1em;
+   font-size: 1em;
 }
 
 a:hover {
-  color:#40513B;
+  color:#91D18B;
 }
 
 /* HOME PAGE */
@@ -51,50 +50,48 @@ a:hover {
 /* NAVIGATION BAR */
 
 nav{
-    display: block;
-    margin:auto;
-    background-color:#243D25 ;
-  }
-  
-  nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:right;
-    margin: 0;
-    padding:0;
-    list-style: none;
-    
-    
-    align-content: right;
-  }
-  
-  nav ul li{
-    margin: 0.25 rem;
-  }
-  
-  nav ul a {
-    display: inline-grid;
-      padding: 1.5rem;
-      color: #F5EDDC;
-      font-size: 1.3rem;
-      text-decoration: none;
-      position: relative;
-      font-family: 'Playfair Display';
-      
-  }
-  
-  nav ul a:hover{
-    color:#40513B;
-  }
-  
-  nav ul a::after {
-    width: 100%;
-    height: 0.15em;
-    content: "";
-    background-color:#F5EDDC;
-  }
+  display: block;
+  margin:auto;
+  background-color:#440047 ;
+}
 
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:right;
+  margin: 0;
+  padding:0;
+  list-style: none;
+  
+  
+  align-content: right;
+}
 
+nav ul li{
+  margin: 0.25 rem;
+}
+
+nav ul a {
+  display: inline-grid;
+    padding: 1.5rem;
+    color: #F5EDDC;
+    font-size: 1.3rem;
+    text-decoration: none;
+    position: relative;
+    font-family: 'Playfair Display';
+    
+}
+
+nav ul a:hover{
+  color:#91D18B;
+}
+
+nav ul a::after {
+  width: 100%;
+  height: 0.15em;
+  content: "";
+  background-color:#F5EDDC;
+}
   /* ABOUT PAGE */
 .about-page-title {
   text-align: center;
@@ -147,34 +144,36 @@ nav{
   .options {
     display: flex;
     flex-wrap: wrap;
-  max-width: 900px;
+   
      justify-content: center;
     align-items: center;
     margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
+   }
+   
+   .themes{
+     display: flex;
+     justify-content: center;
+    height: 200px;
+     width: 200px;
+    max-width: 600px;
+    border: 1px solid green;
+     align-items : center;
+     list-style: none;
+     text-align: center;
+     margin: 2em;
+     background-image: radial-gradient(ellipse farthest-corner at 2em 2em , #5c1260, #5c1260 50%, #440047 50%);
+    background-size: 2em 2em;
+   }
+   
+   .themes a {
+    color: #F5EDDC;
+    text-decoration: none;
+    font-size: 1.5em;
+   }
+
+   .themes a:hover{
+    color: #91D18B;
   }
-
-  .themes{
-    display: flex;
-    justify-content: center;
-   height: 200px;
-    width: 200px;
-   border: 1px solid green;
-    align-items : center;
-    list-style: none;
-    text-align: center;
-    margin: 1.5em;
-    background-image: radial-gradient(ellipse farthest-corner at 2em 2em , #243D25, #243D25 50%, #40513B 50%);
-   background-size: 2em 2em;
-    
- }
-
- .themes a {
-  color: #F5EDDC;
-  text-decoration: none;
-  font-size:1.35em;
- }
 
   /* TEST ANXIETY PAGE */
 
@@ -207,7 +206,7 @@ nav{
    list-style: none;
    text-align: center;
    margin: 1.5em;
-  background: repeating-linear-gradient(45deg, #243D25, #243D25 50%, #40513B 50%, #40513B);
+  background: repeating-linear-gradient(45deg, #5c1260, #5c1260 50%, #440047 50%, #440047);
   background-size: 20px 20px;
   background-size: 2em 2em;  
 }
@@ -228,14 +227,26 @@ nav{
 
 h4 {
   display: block;
-  border: 0.3em solid #243D25;
-  box-shadow:0.25em 0.25em #676f65 ;
+  border: 0.3em solid #440047;
+  box-shadow:0.25em 0.25em #5c1260 ;
   padding: 1em;
   border-radius: 12px;
 }
 
+#button {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  padding: 10px;
+  column-gap: 10px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+
 #start {
-  background-color: #243D25;
+  background-color: #440047;
   padding: 0.7rem;
   
 }
@@ -247,7 +258,7 @@ h4 {
 }
 
 #end {
-  background-color: #243D25;
+  background-color: #440047;
   padding: 0.7rem;
   
 }
@@ -281,7 +292,7 @@ h4 {
   text-align: center;
   margin: 1.5em; 
  
-  background-image: repeating-linear-gradient(-45deg, #243D25, #243D25 1em, #40513B 1em, #40513B 50%);
+  background-image: repeating-linear-gradient(-45deg, #5c1260, #5c1260 1em, #440047 1em, #440047 50%);
  background-size: 2em 2em;
  
 }
@@ -306,7 +317,7 @@ h4 {
   list-style: none;
   text-align: center;
   margin: 1.5em; 
-  background: repeating-linear-gradient(10deg, #243D25, #243D25 50%, #40513B 50%, #40513B);
+  background: repeating-linear-gradient(10deg, #5c1260, #5c1260 50%, #440047 50%, #440047);
  background-size: 100% 2em;
  
 }
@@ -328,7 +339,85 @@ h4 {
 
 
 
-  
+ 
 body{
- color: #fadede ;
+ color: #5c1260 ;
+}
+
+
+/* QUIZ */
+
+.quiz{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.question-container{
+  margin: 10px;
+  padding: 5px;
+  width: 650px;
+  height: 10vh;
+  background-color: #440047;
+  font-size: 1.5rem;
+  text-align: center;
+color: white;
+   
+}
+.result{
+  margin: 10px;
+  padding: 5px;
+  width:650px;
+  height: 10vh;
+  text-align: center;
+  font-size: 2rem;
+   
+}
+.option-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 5px;
+  width: 650px;
+  height: 20vh;
+align-content: center;
+align-items: center;
+  background-color: #440047;  
+     
+}
+.option{   
+  
+  width: 20vw;
+  height: 10vh;
+  font-size: larger;
+  background-color: lightskyblue;
+  
+}
+.option:hover{
+  background-color: lightgoldenrodyellow;
+}
+.navigation{
+width: 650px;
+  height: 10vh;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.evaluate,.next{
+  width:30vw;
+  height: 8vh;
+  padding: 5px;
+  font-size: larger;
+}
+.evaluate{
+ 
+  background-color: #FBECEC;
+}
+.next{
+  color: white;
+  background-color: #BF3325;
 }

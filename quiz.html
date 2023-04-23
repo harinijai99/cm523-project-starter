@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PUT A TITLE IN HERE -->
+    <title>This is the demo</title>
+    <!-- PUT A DESCRIPTION IN HERE -->
+    <meta name="description" content="describe content of the page here...." />
+    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
+    <link rel="stylesheet" href="styles.normalize.css" />
+    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
+    <!-- LINK TO YOUR STYLES -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
+    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
+    <script src="scripts/quiz.js" defer></script>
+  </head>
+<body>
+    <header>
+          <nav>
+            <ul class = "menu">
+              <li><a href="index.html">The Green Ribbon Project</a></li>
+              <li><a href = "about.html">About</a></li>
+              <li><a href = "resources.html">Resources</a></li>
+            </ul>
+          </nav>
+      <div class="quiz">
+          
+          <div class="question-container" id="question">
+              Question goes here.
+          </div>
+          <div class="option-container">
+              <button class="option" onclick="" id="op1" >option1</button>
+       
+              <button class="option" id="op2" >option2</button>
+       
+              <button class="option" id="op3">option3</button>
+       
+              <button class="option" id="op4">option4</button>
+          </div>
+          <div class="navigation">
+              <button class="evaluate">Check</button>
+              <button class="next">Next</button>
+          </div>
+        <div class="result">
+          </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+  </html>
