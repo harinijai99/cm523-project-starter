@@ -13,7 +13,6 @@ body {
  background: repeating-linear-gradient(45deg, #FBECEC, #FBECEC 5px,  #fadede 0, #fadede 30px);
  min-height: 100vh;
 margin: auto;
- 
 }
 
 p {
@@ -45,6 +44,25 @@ a:hover {
   font-family: 'Shrikhand';
   font-size: 2.5em;
   text-align:center;
+}
+
+.get-started{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+}
+#begin {
+  background-color: #440047;
+  padding: 10px;
+  
+}
+
+#begin a {
+  color: #FBECEC;
+  font-family: "Playfair Display";
+  text-decoration:none;
 }
 
 /* NAVIGATION BAR */
@@ -144,10 +162,12 @@ nav ul a::after {
   .options {
     display: flex;
     flex-wrap: wrap;
-   
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
      justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2rem;
    }
    
    .themes{
@@ -155,12 +175,12 @@ nav ul a::after {
      justify-content: center;
     height: 200px;
      width: 200px;
-    max-width: 600px;
+    
     border: 1px solid green;
      align-items : center;
      list-style: none;
      text-align: center;
-     margin: 2em;
+     margin: 1em;
      background-image: radial-gradient(ellipse farthest-corner at 2em 2em , #5c1260, #5c1260 50%, #440047 50%);
     background-size: 2em 2em;
    }
@@ -337,33 +357,30 @@ h4 {
 }
 
 
-
-
- 
 body{
  color: #5c1260 ;
 }
 
 
 /* QUIZ */
-
 .quiz{
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+font-family: 'Shrikhand';
+
 }
 .question-container{
-  margin: 10px;
+  margin: 40px;
   padding: 5px;
-  width: 650px;
+  width: 600px;
   height: 10vh;
-  background-color: #440047;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
-color: white;
-   
+color: #440047;
+      
 }
 .result{
   margin: 10px;
@@ -371,53 +388,74 @@ color: white;
   width:650px;
   height: 10vh;
   text-align: center;
-  font-size: 2rem;
-   
+  font-size: 2rem;    
 }
-.option-container{
-  display: flex;
-  justify-content: space-around;
-  margin: 10px;
-  padding: 5px;
-  width: 650px;
-  height: 20vh;
-align-content: center;
+
+.option-container {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+ justify-content: center;
 align-items: center;
-  background-color: #440047;  
-     
+margin-top: 10px;
+width: 450px;
+height: 350px;
+background-image: radial-gradient(ellipse farthest-corner at 1em 1em , #5c1260, #5c1260 50%, #440047 50%);
+background-size: 1em 1em;
 }
-.option{   
-  
-  width: 20vw;
-  height: 10vh;
-  font-size: larger;
-  background-color: lightskyblue;
-  
+
+.option{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+height: 85px;
+ width: 180px;
+max-width: 650px;
+ align-items : center;
+ text-align: center;
+ margin: 1em;
+ font-family: 'Playfair Display';
+ background-color: #FBECEC;
+ color: #440047;
+ font-size: 1.2rem;
+ 
 }
+
 .option:hover{
-  background-color: lightgoldenrodyellow;
+  background-color: #91D18B;
 }
 .navigation{
 width: 650px;
   height: 10vh;
-  margin: 10px;
+  margin: 20px;
   padding: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
  
 }
 
 .evaluate,.next{
-  width:30vw;
-  height: 8vh;
+  width: 100px;
+  height: 50px;
   padding: 5px;
   font-size: larger;
+margin:20px;
+color: #F5EDDC;
+font-family: "Playfair Display";
+background-color: #440047;
 }
-.evaluate{
- 
-  background-color: #FBECEC;
+
+/* RESOURCES */
+.resources .source {
+  color:#8b438f;
 }
-.next{
-  color: white;
-  background-color: #BF3325;
+
+.resources .source a{
+  text-decoration: none;
+  color:#440047;
+  font-weight: bolder;
+}
+
+.resources .source a:hover{
+color:#91D18B;
 }
