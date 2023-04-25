@@ -67,23 +67,18 @@
 /* Option selection */
 
 let start = true;
-
-function answer(id) {
-
 let result = document.getElementsByClassName("result");
-result[0].innerText = "";
-
 const question = document.getElementById("question");
-
-
-question.innerText = Questions[id].q;
-
 const op1 = document.getElementById('op1');
 const op2 = document.getElementById('op2');
 const op3 = document.getElementById('op3');
 const op4 = document.getElementById('op4');
 
+function answer(id) {
 
+result[0].innerText = "";
+
+question.innerText = Questions[id].q;
 
 op1.innerText = Questions[id].a[0].text;
 op2.innerText = Questions[id].a[1].text;

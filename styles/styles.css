@@ -361,7 +361,31 @@ body{
  color: #5c1260 ;
 }
 
+/* ACADEMIC DURESS */
 
+.organizational-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  list-style: none;
+  
+}
+.organizational-tools li {
+  margin: 0.25em;
+  padding: 0.25em 0.5em;
+  background-image: repeating-linear-gradient(-45deg, #5c1260, #5c1260 1em, #440047 1em, #440047 50%);
+  background-size: 2em 2em;
+  color: rgb(137, 27, 45);
+  border: 1.5px solid rgb(138, 28, 46);
+  box-shadow: 0.15em 0.15em rgba(49,36,131, 0.8);
+}
+.organizational-tools li a {
+  text-decoration: none;
+  color:#fadede;
+  
+}
 /* QUIZ */
 .quiz{
   height: 100vh;
@@ -373,7 +397,7 @@ font-family: 'Shrikhand';
 
 }
 .question-container{
-  margin: 40px;
+  margin: 30px;
   padding: 5px;
   width: 600px;
   height: 10vh;
@@ -383,12 +407,11 @@ color: #440047;
       
 }
 .result{
-  margin: 10px;
-  padding: 5px;
+  margin: 5px;
   width:650px;
   height: 10vh;
   text-align: center;
-  font-size: 2rem;    
+  font-size: 1.5rem;    
 }
 
 .option-container {
@@ -418,7 +441,7 @@ max-width: 650px;
  background-color: #FBECEC;
  color: #440047;
  font-size: 1.2rem;
- 
+ border-radius: 10%;
 }
 
 .option:hover{
