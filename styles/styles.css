@@ -489,7 +489,7 @@ color: #440047;
 .result{
   
   margin-bottom: 20px;
-  width:650px;
+  max-width:650px;
   height: 10vh;
   text-align: center;
   font-size: 1.3rem;    
@@ -504,7 +504,7 @@ align-items: center;
 margin-top: 20px;
 /* width: 450px; */
 max-height: 600px;
-  
+max-width: 700px; 
 /*background-image: radial-gradient(ellipse farthest-corner at 1em 1em , #5c1260, #5c1260 50%, #440047 50%); 
 background-size: 1em 1em; */
 }
@@ -530,7 +530,7 @@ height: 75px;
   background-color: #91D18B;
 }
 .navigation{
-width: 650px;
+max-width: 650px;
   height: 80px;
   margin: 10px;
   padding: 5px;
