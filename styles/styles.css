@@ -41,7 +41,7 @@ body {
  /*background: repeating-linear-gradient(45deg, #F5EDDC, #F5EDDC 15px,  #FFF5E4 0, #FFF5E4 30px);*/
  background-image: linear-gradient( to bottom right,  #98ebc7,  #91D18B ); 
 margin: auto;
- 
+
 }
 
 /* HOME PAGE */
@@ -264,14 +264,18 @@ nav ul a:hover{
 
   #issue {
     display: grid;
-    
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
     line-height: 1.5em;
     width: 100%;
   max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 30px;
   font-family: "Playfair Display";
+  
   }
 
   #issue h1 {
@@ -279,21 +283,15 @@ nav ul a:hover{
     font-size: 2em;
     text-align: center;
   }
+p{
+  padding: 0.5rem;
+  margin:1rem;
+  
+}
 
-.playlist{
-   display: flex;
-   justify-content: center;
-  height: 150px;
-   width: 150px;
-  max-width: 600px;
-   align-items : center;
-   list-style: none;
-   text-align: center;
-   margin: 1.5em;
-  /*background: repeating-linear-gradient(45deg, #5c1260, #5c1260 50%, #440047 50%, #440047);
-  background-size: 20px 20px;
-  background-size: 2em 2em; */
-  background-color:;
+.tactics{
+  margin: 0.8rem;
+  list-style: none;
 }
 
 .music {
@@ -302,13 +300,9 @@ nav ul a:hover{
    justify-content: center;
   align-items: center;
   margin-top: 1em;
-}
+} 
 
-.playlist a {
-  color: #F5EDDC;
-  text-decoration: none;
-  font-size: 1.5em;
-}
+
 
 h4 {
   display: block;
@@ -319,6 +313,7 @@ h4 {
   color:#072b2d;
   background-color: rgba(241, 245, 242);
   max-width: 650px;
+  margin: 1rem;
 }
 
 #button {
@@ -330,6 +325,7 @@ h4 {
   align-items: center;
   justify-content: center;
   align-content: center;
+  
 }
 
 
