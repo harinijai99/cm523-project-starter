@@ -137,10 +137,10 @@ const evaluate = document.getElementsByClassName("evaluate");
 evaluate[0].addEventListener("click", () => {
     if (selected == "true") {
         result[0].innerHTML = "You are right!";
-        result[0].style.color = "green";
+        result[0].style.color = "#440047";
     } else {
         result[0].innerHTML = "Oh no, that ain't right!";
-        result[0].style.color = "red";
+        result[0].style.color = "#440047";
     }
 });
 }

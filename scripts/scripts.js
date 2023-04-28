@@ -1,16 +1,26 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
+
+
 /* const begin = document.getElementById("begin");
-let name = window.prompt("Enter your name");
+/*let name = window.prompt("Enter your name");
 
-begin.addEventListener('click', name); */
+begin.addEventListener('click', prompt("Enter your name")); */
+
+/*const userInput = document.getElementById("name");*/
+/* const start = document.getElementById("start"); */
 
 
-const start = document.getElementById("start");
+const start = document.getElementById("start"); 
 
 start.addEventListener('click', showMessage);
 
-function showMessage() {
+/*function showMessage() {
   window.alert(["Hope this helped! Always remember it's a bad day not a bad life!"]);
+} */
+
+function showMessage() {
+  let inputText = document.getElementById("name"); 
+  alert(inputText.value);
 }
 
 const end = document.getElementById("end");
