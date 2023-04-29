@@ -64,12 +64,40 @@ function getValue() {
 
 
 function Start() {
-    let cachedValue = localStorage.getItem("name");
-    alert(`${cachedValue} hope you have a good day!`);
-    // If you want to redirect to page use this line:
+    let userName = localStorage.getItem("name");
+    alert(`${userName} hope you have a good day!`);
+   
     //window.location.href("Location")
   }
 
   function End() {
-    window.alert(["If these tactics were'nt sufficient we have more resources for you. You got this!"]);
+    let userName = localStorage.getItem("name");
+    alert(`Sorry, ${userName} If these tactics were'nt sufficient we have more resources for you. You got this!`);
+   /* window.alert(["If these tactics were'nt sufficient we have more resources for you. You got this!"]);*/
   }
+
+  let total = 0
+
+document.querySelector('input').addEventListener('keyup', function() {
+    fiftyPercent()
+    thirtyPercent()
+    twentyPercent()
+})
+
+function fiftyPercent() {
+    const income = document.querySelector('#afterTaxIncome').value
+    total = income * .5
+    document.querySelector('#fifty').innerText = "$" + total
+}
+
+function thirtyPercent() {
+    const income = document.querySelector('#afterTaxIncome').value
+    total = income * .3
+    document.querySelector('#thirty').innerText = "$" + total
+}
+
+function twentyPercent() {
+    const income = document.querySelector('#afterTaxIncome').value
+    total = income * .2
+    document.querySelector('#twenty').innerText = "$" + total
+}
