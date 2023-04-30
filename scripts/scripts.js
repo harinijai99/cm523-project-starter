@@ -101,3 +101,4 @@ function twentyPercent() {
     total = income * .2
     document.querySelector('#twenty').innerText = "$" + total
 }
+
