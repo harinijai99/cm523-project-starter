@@ -160,7 +160,9 @@ if (id < 5) {
     id++;
     answer(id);
     console.log(id);
-} 
+} else  {window.location = "choice.html";
+    
+}
 
 }); 
 

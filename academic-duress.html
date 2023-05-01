@@ -16,6 +16,7 @@
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/timer.js" defer></script>
   </head>
   <body>
     <header>
@@ -47,6 +48,36 @@
             <li>Repeat the process until the task is completed.</li>
            </ol>
            
+           <section class = "pomodorotimer">
+            <h1>Pomodoro Timer</h1>
+            <div id="container">
+              
+                <p id="work" class="label">Work:</p>
+              <p id="break" class="label">Break:</p>
+              <p id="cycles" class="label">Cycles:</p>
+                
+                <div id="work-timer" class="timer">
+                    <p id="workminutes">25</p>
+                  <p class="semicolon">:</p>
+                  <p id="workseconds">00</p>
+                </div>
+        
+                
+                <p id="counter" class="timer">0</p>
+        
+               
+                <div id="break-timer" class="timer">
+                    <p id="breakminutes">05</p>
+                  <p class="semicolon">:</p>
+                  <p id="breakseconds">00</p>
+                </div>
+               
+                <button id="tstart" class="btn">Start</button>
+                <button id="tstop" class="btn">Pause</button>
+                <button id="treset" class="btn">Reset</button>
+            </div>
+            
+        </section>
 
         <p>Organizational tools (Planners, Scheduling, Note Taking):    
             Your organizational tools, like your calendar and schedule, should fit your needs and preferences. Some students may find physical planners and paper helpful, while others may prefer digital tools. Although your calendar can aid with long-term planning, most of these tools are designed to help prioritize tasks on a daily basis.</p>

@@ -30,6 +30,7 @@ margin: auto;
 
 p {
   font-size: 1em;
+  
 }
 
 a:hover {
@@ -53,7 +54,10 @@ a:hover {
   margin: auto;
   color: #FBECEC;
   padding: 0.8rem;
+  background-color:rgba(241, 245, 242, 0.8);
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
 }
+/* media screen query */
 
 .page-title h1 {
   font-family: 'Shrikhand';
@@ -76,15 +80,16 @@ h2{
   
 }
 #begin {
-  background-color: #FBECEC;
+  background-color: #440047;
   padding: 10px;
   border:unset;
-  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  border: 1px solid #440047;
+  box-shadow: 8px 8px rgba(0,0,0,0.2);
   margin-top: 10px;
 }
 
 #begin a {
-  color: #440047;
+  color: #FBECEC;
   font-family: "Playfair Display";
   text-decoration:none;
   
@@ -206,24 +211,25 @@ text-align: center;
     margin-top: 100px;
     margin-bottom: 75px;
     font-family: 'Playfair Display';
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   /*media screen query for margin-top */
 
   
 
-  .options {
+  
+   .options {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto; 
+    max-width: 600px;
     margin-bottom: 50px;
-    
-   }
-   
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left:auto;
+    margin-right: auto;
+}
    
    .themes{
      display: flex;
@@ -284,7 +290,7 @@ text-align: center;
     max-width: 900px;
   }
 
-p{
+#issue p{
   padding: 0.5rem;
   margin:1rem;
   
@@ -511,6 +517,100 @@ body{
 
 .organizational-tools li a:hover {
   color:#91D18B
+}
+
+.pomodorotimer {
+  display:block;
+  background-color: rgba(241, 245, 242, 0.6);
+  padding: 25px;
+  line-height: 1rem;
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
+  color:#072b2d;
+ margin: 20px;
+ border-radius:0%;
+ 
+}
+
+.pomodorotimer p{
+  border-left: none;
+}
+
+
+#container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(3, 100px);
+justify-content:center
+}
+
+.label {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#work {
+  grid-area: 1 / 2 / 1 / 2;
+}
+#break {
+  grid-area: 1 / 4 / 1 / 4;
+}
+#cycles {
+  grid-area: 1 / 3 / 1 / 3;
+}
+
+.timer {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#counter {
+  grid-area: 2 / 3 / 2 / 3;
+}
+
+#work-timer {
+  grid-area: 2 / 2 / 2 / 2;
+}
+
+#break-timer {
+  grid-area: 2 / 4 / 2 / 4;
+}
+
+.btn {
+  align-self: center;
+  justify-self: center;
+  width: 100px;
+  height: 30px;
+border:unset;
+  font-size: 15px;
+  font-family:'Playfair Display';
+  
+}
+.btn:hover{
+  color:#91D18B;
+}
+
+#tstart {
+  grid-area: 3 / 2 / 3 / 2;
+  
+}
+
+#treset {
+  grid-area: 3 / 3 / 3 / 3;
+}
+
+#tstop {
+  grid-area: 3 / 4 / 3 / 4;
 }
 
 /* QUIZ */
