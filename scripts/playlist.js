@@ -5,28 +5,36 @@ btn.addEventListener('click',function randomImg() {
 
  let links = [
         { 
-          text: "Playlist 1",
-          spotify:  "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO"
+          text: "Rainy Indie Afternoon Music",
+          spotify:  "https://open.spotify.com/playlist/3XZa6C8tc7njNXn2PWRwQs?go=1&sp_cid=768b00b2-bcb6-4b3b-aac3-23d3a76a7fc3&utm_source=embed_player_p&utm_medium=desktop&nd=1"
         },
         {
-          text: "Playlist 2",
-          spotify:  "https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ",
+          text: "Acoustic Coffee Club",
+          spotify:  "https://open.spotify.com/playlist/09a4ki7f0XxNzyTPwusWkJ?go=1&sp_cid=768b00b2-bcb6-4b3b-aac3-23d3a76a7fc3&utm_source=embed_player_p&utm_medium=desktop&nd=1",
         },
 {
-          text: "Playlist 3",
-          spotiify:  "https://open.spotify.com/playlist/37i9dQZF1DX9sIqqvKsjG8",
+          text: "Calm Mornings",
+          spotiify:  "https://open.spotify.com/playlist/1RjJHvZ6FVsgdo4EDsbIEL?go=1&sp_cid=768b00b2-bcb6-4b3b-aac3-23d3a76a7fc3&utm_source=embed_player_p&utm_medium=desktop&nd=1",
         },
 {
-          text: "Playlist 4",
-          spotify:  "https://open.spotify.com/playlist/37i9dQZF1DWT5lkChsPmpy",
+          text: "Anti Anxiety Playlist",
+          spotify:  "https://open.spotify.com/playlist/37i9dQZF1EIg42NGihn0NZ",
         },
 {
-          text: "Playlist 5",
-          spotify:  "https://open.spotify.com/playlist/37i9dQZF1DWZZbwlv3Vmtr",
+          text: "Autumn Coffee Shop",
+          spotify:  "https://open.spotify.com/playlist/4Ls1pL9aRI082hMQT8VJcC",
         },
         {
-          text: "Playlist 6",
-          spotify:  "https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U",
+          text: "Atmospheric Calm",
+          spotify:  "https://open.spotify.com/playlist/37i9dQZF1DX4TnpT6vw5rE?go=1&sp_cid=768b00b2-bcb6-4b3b-aac3-23d3a76a7fc3&utm_source=embed_player_p&utm_medium=desktop&nd=1",
+        },
+        {
+          text: "Forest Vibes",
+          spotify:  "https://open.spotify.com/playlist/7ztCGMKJMU8tmTcos4EC1l",
+        },
+        {
+          text: "Comforting Classics",
+          spotify:  "https://open.spotify.com/playlist/2xXxYdGx5OvmmwupUQsaGZ",
         },
       ];
       let link = links[Math.floor(Math.random() * links.length)];

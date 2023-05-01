@@ -151,7 +151,7 @@ nav ul li{
 
 nav ul a {
   display: inline-grid;
-    padding: 1.5rem;
+    padding: 1rem;
     color: #440047;
     font-size: 1.3rem;
     text-decoration: none;
@@ -180,6 +180,44 @@ nav ul a:hover{
   margin-bottom: 30px;
   font-family: "Playfair Display";
 }
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left:auto;
+  margin-right: 40px;
+}
+
+ .documents{
+   display: flex;
+   justify-content: center;
+  height: 70px;
+   width: 200px;
+   align-items : center;
+   list-style: none;
+   text-align: center;
+   margin: 1em;
+  background-color: #FBECEC;
+    margin-top:35px;
+ /*background:#ECEFF1; */
+ box-shadow: 10px 10px rgba(0,0,0,0.2);
+
+ } 
+ 
+ .documents a {
+  color: #440047;
+  text-decoration: none;
+  font-size: 1.5em;
+ }
+
+ .documents:hover{
+  background-color: #91D18B;
+} 
 
 /* RESOURCES PAGE */
 
@@ -303,7 +341,7 @@ nav ul a:hover{
   display: block;
   margin:auto;
   margin-top: 1em;
-  width: 300px;
+  max-width: 300px;
   height: 200px;
   padding-top: 10px;
   box-shadow: 5px 5px rgba(0,0,0,0.2);
@@ -315,7 +353,12 @@ nav ul a:hover{
   border-left:none;
   text-align:center;
 }
-
+#Randombutton{
+  border:unset;
+  height:25px;
+  width: 100px;
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
+}
 
 p {
   border-left: 5px solid #440047;
@@ -345,7 +388,19 @@ h4 {
   align-content: center;
   
 }
+@media screen and (max-width: 300px) {
+  #button{
+    grid-template-columns: 90px 90px;
+    
+  }
+  #start{
+    height: 70px;
+  }
 
+  #end{
+    height:70px;
+  }
+}
 
 #start {
   background-color: rgba(241, 245, 242);
@@ -528,89 +583,103 @@ body{
  margin: 20px;
  border-radius:0%;
  
+} 
+
+.pomodorotimer h2{
+  text-align:center;
+  color:#072b2d;
 }
 
 .pomodorotimer p{
   border-left: none;
 }
-
-
 #container {
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(5, 50px);
-  grid-template-rows: repeat(3, 50px);
-justify-content:center
+  height: 250px;
+  max-width: 300px;
+  margin:  auto;
+ display: grid;
+grid-template-rows: repeat(3, 70px);
+grid-template-columns: 80px 80px 80px;
+justify-content:center;
 }
 
 .label {
   align-self: center;
   justify-self: center;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: bold;
 }
 
 #work {
-  grid-area: 1 / 2 / 1 / 2;
+  grid-area: 1/1;
 }
 #break {
-  grid-area: 1 / 4 / 1 / 4;
+  grid-area: 1/ 3;
 }
 #cycles {
-  grid-area: 1 / 3 / 1 / 3;
+  grid-area: 1/ 2;
 }
 
 .timer {
   display: flex;
   align-self: center;
   justify-self: center;
-  font-size: 0.8rem;
+
+  font-size: 20px;
   font-weight: bold;
 }
+#work-timer p {
+  margin: 0;
+  padding: 0;
+}
 
-p {
+#break-timer p {
   margin: 0;
   padding: 0;
 }
 
 #counter {
-  grid-area: 2 / 3 / 2 / 3;
+  grid-area: 2/ 2;
 }
 
 #work-timer {
-  grid-area: 2 / 2 / 2 / 2;
+  grid-area: 2/ 1;
+  
 }
 
 #break-timer {
-  grid-area: 2 / 4 / 2 / 4;
+  grid-area: 2 / 3;
 }
+
+/*buttons*/
 
 .btn {
   align-self: center;
   justify-self: center;
+border:unset;
   width: 70px;
   height: 30px;
-border:unset;
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
   font-size: 15px;
   font-family:'Playfair Display';
-  
 }
 .btn:hover{
   color:#91D18B;
 }
 
 #tstart {
-  grid-area: 3 / 2 / 3 / 2;
-  
+  grid-area: 3/1;
 }
 
 #treset {
-  grid-area: 3 / 3 / 3 / 3;
+  grid-area: 3/ 2;
 }
 
 #tstop {
-  grid-area: 3 / 4 / 3 / 4;
+  grid-area: 3/3;
 }
+
+
 
 /* QUIZ */
 .quiz{
