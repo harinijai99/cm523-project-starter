@@ -37,21 +37,6 @@ a:hover {
 } 
 
 /* HOME PAGE */
-/*#index {
-  background-image: url('https://wallpapercave.com/wp/wp5126882.jpg');
-  background-size:cover;
-  animation: slidein 70s;
-}
-
-@keyframes slidein {
-  from {background-position: top;background-size:1500px; }
-  to {background-position: -100px 0px;background-size:1500px;}
-  
-  }
-
-  #index nav {
-    background-color:unset;
-  } */
   
 .page-title {
   display: grid;
@@ -225,6 +210,8 @@ text-align: center;
     margin-right: 20px;
   }
   /*media screen query for margin-top */
+
+  
 
   .options {
     display: flex;
@@ -443,34 +430,51 @@ h4 {
 
 /* SOCIAL ANXIETY */
 
-.tools{
-  display: flex;
-  justify-content: center;
- height: 90px;
-  width: 90px;
- max-width: 600px;
- border: 1px solid green;
-  align-items : center;
-  list-style: none;
+.journal{
+  display:block;
+  margin: 2.5rem;
+  background-color: rgba(241, 245, 242, 0.6);
+  padding: 50px;
+  line-height: 1.75rem;
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
+  color:#072b2d;
+}
+
+.journal h3{
   text-align: center;
-  margin: 1.5em; 
-  background: repeating-linear-gradient(10deg, #5c1260, #5c1260 50%, #440047 50%, #440047);
- background-size: 100% 2em;
- 
+  
+}
+
+.journal li{
+  
+  list-style:none;
 }
 
 .journaling {
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
- margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+  padding: 0;
+  list-style: none;
+  
+}
+.tools  {
+  margin: 0.25em;
+  padding: 0.25em 0.5em;
+  background-color:#072b2d;
+  
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
 }
 
 .tools a {
- color: #F5EDDC;
- text-decoration: none;
- font-size: 1em;
+  text-decoration: none;
+  color:#FBECEC;
+  
+}
+
+.tools a:hover {
+  color:#91D18B;
 }
 
 
