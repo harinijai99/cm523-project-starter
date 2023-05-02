@@ -22,7 +22,6 @@ body {
   
   min-height: 100vh;
   color: #FBECEC;
- /*background: repeating-linear-gradient(45deg, #F5EDDC, #F5EDDC 15px,  #FFF5E4 0, #FFF5E4 30px);*/
  background-image: linear-gradient( to bottom right,  #98ebc7,  #91D18B );
  background-image: linear-gradient( to bottom right,  #91D18B,  #98ebc7 ); 
 margin: auto;
@@ -46,7 +45,7 @@ a:hover {
   font-family: 'Playfair Display';
   text-align:center;
   position: absolute;
-  height: 400px;
+  height: 350px;
   max-width: 600px;
   top: 0;
   bottom: 0;
@@ -56,12 +55,20 @@ a:hover {
   color: #FBECEC;
   padding: 0.8rem;
   background-color:rgba(241, 245, 242, 0.8);
-  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 12px 12px rgba(0,0,0,0.2);
 }
 /* media screen query */
+@media screen and (max-width: 500px) {
+  .page-title {
+    height: 600px;
+    margin:15px;
+    margin-top: 170px;
+    font-size: 0.8rem;
+  }
 
+}
 .page-title h1 {
-  font-family: 'Roboto Slab';
+  font-family: 'Lily Script One';
   font-size: 2.5em;
   text-align:center;
   color:#440047;
@@ -585,9 +592,11 @@ body{
  
 } 
 
-.pomodorotimer h2{
+.pomodorotimer h3{
   text-align:center;
   color:#072b2d;
+  font-size:1.2rem;
+  line-height:1.4em;
 }
 
 .pomodorotimer p{
@@ -832,13 +841,3 @@ h4 {
 color:#91D18B;
 }
 
-@media screen and (max-width: 500px) {
-  .page-title {
-  
-    height: 600px;
-    margin:15px;
-    margin-top: 170px;
-    
-  }
-
-}

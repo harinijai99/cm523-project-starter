@@ -1,3 +1,8 @@
+//Pomodoro technique
+//References: https://www.youtube.com/watch?v=sYFR4NJkrFc 
+//https://www.youtube.com/watch?v=vAEG6OVCass 
+
+
 let start = document.getElementById('tstart');
 let stop = document.getElementById('tstop');
 let reset = document.getElementById('treset');

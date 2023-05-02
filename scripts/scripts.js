@@ -1,35 +1,8 @@
 /* WRITE YOUR JS HERE... YOU MAY REQUIRE MORE THAN ONE JS FILE. IF SO SAVE IT SEPARATELY IN THE SCRIPTS DIRECTORY */
 
-
-/* const begin = document.getElementById("begin");
-/*let name = window.prompt("Enter your name");
-
-begin.addEventListener('click', prompt("Enter your name")); */
-
-/*const userInput = document.getElementById("name");*/
-/* const start = document.getElementById("start"); */
-
-
-/*const start = document.getElementById("start"); 
-
-start.addEventListener('click', showMessage);
-
-/*function showMessage() {
-  window.alert(["Hope this helped! Always remember it's a bad day not a bad life!"]);
-} */
-
-/*function showMessage() {
-  let inputText = document.getElementById("name"); 
-  alert(inputText.value);
-}
-
-const end = document.getElementById("end");
-
-end.addEventListener('click', showText);
-
-function showText() {
-  window.alert(["If these tactics were'nt sufficient we have more resources for you. You got this!"]);
-} */
+//Reference Message prompt:
+// https://www.atatus.com/blog/what-is-javascript-localstorage-a-complete-guide-for-beginners/#:~:text=setItem%20%28%29%3A%20This%20method%20is%20used%20to%20add,used%20to%20clear%20out%20all%20of%20the%20storage. 
+// https://www.w3schools.com/jsref/jsref_try_catch.asp 
 
 try
 {
@@ -50,7 +23,9 @@ try
 {
 end.addEventListener('click', End);
 }
-catch {}
+catch {} 
+
+
 
 function getName() {
   let value = document.getElementById("name").value;
@@ -65,16 +40,20 @@ function getValue() {
 
 function Start() {
     let userName = localStorage.getItem("name");
-    alert(`${userName} hope you have a good day!`);
+    alert(`Hey ${userName} always remember that better days are ahead! Hope these resources helped!`);
    
-    //window.location.href("Location")
+    
   }
 
   function End() {
     let userName = localStorage.getItem("name");
     alert(`Sorry, ${userName} If these tactics were'nt sufficient we have more resources for you. You got this!`);
-   /* window.alert(["If these tactics were'nt sufficient we have more resources for you. You got this!"]);*/
-  }
+  } 
+
+
+  // 50/30/20 CALCULATOR 
+  // References
+  // https://codepen.io/tae918/pen/PoOVzxp 
 
   let total = 0
 

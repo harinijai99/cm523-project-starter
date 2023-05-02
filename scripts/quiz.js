@@ -1,6 +1,7 @@
 /* QUIZ */
+// References: https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ 
 
-/* Questions */
+//Questions 
 
   const Questions = [{
     id: 0,
