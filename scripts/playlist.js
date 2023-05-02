@@ -1,7 +1,10 @@
+//Reference
+//https://www.w3schools.com/JS/js_random.asp 
+
 let btn = document.getElementById('Randombutton');
 
 
-btn.addEventListener('click',function randomImg() {
+btn.addEventListener('click',function randomPlay() {
 
  let links = [
         { 
