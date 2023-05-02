@@ -14,7 +14,7 @@ btn.addEventListener('click',function randomImg() {
         },
 {
           text: "Calm Mornings",
-          spotiify:  "https://open.spotify.com/playlist/1RjJHvZ6FVsgdo4EDsbIEL?go=1&sp_cid=768b00b2-bcb6-4b3b-aac3-23d3a76a7fc3&utm_source=embed_player_p&utm_medium=desktop&nd=1",
+          spotify:  "https://open.spotify.com/playlist/1RjJHvZ6FVsgdo4EDsbIEL?go=1&sp_cid=768b00b2-bcb6-4b3b-aac3-23d3a76a7fc3&utm_source=embed_player_p&utm_medium=desktop&nd=1",
         },
 {
           text: "Anti Anxiety Playlist",
