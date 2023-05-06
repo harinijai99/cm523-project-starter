@@ -223,6 +223,28 @@ color:#FBECEC;
   transform: rotate(140deg);
 }
 
+@media screen and (max-width: 450px){
+  
+  .logo{
+    display:none;
+  
+  }
+  nav ul a {
+    display: inline-grid;
+      padding: 0.5rem;
+      color: #440047;
+      font-size: 1.1rem;
+      text-decoration: none;
+      position: relative;
+      font-family: 'Playfair Display';
+      justify-content:center;
+      align-content: center;
+      align-items: center;
+      margin-top: 10px;
+  } 
+  
+}
+
   /* ABOUT PAGE */
 .about-page-title {
   text-align: center;
@@ -411,22 +433,35 @@ color:#FBECEC;
   margin:auto;
   margin-top: 1em;
   max-width: 300px;
-  height: 200px;
+  height: 250px;
   padding-top: 10px;
   box-shadow: 5px 5px rgba(0,0,0,0.2);
   background-color: rgba(241, 245, 242, 0.6); 
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .playlist p{
   border-left:none;
   text-align:center;
+  font-size:1rem;
 }
+
+#link a{
+  color:#440047;
+  font-size: 1rem;
+}
+
+#link a:hover{
+  color:#91D18B;
+}
+
 #Randombutton{
   border:unset;
   height:25px;
   width: 100px;
   box-shadow: 5px 5px rgba(0,0,0,0.2);
+  font-family: 'Playfair Display';
 }
 
 p {
@@ -982,4 +1017,3 @@ h4 {
 .resources .source a:hover{
 color:#91D18B;
 }
-
